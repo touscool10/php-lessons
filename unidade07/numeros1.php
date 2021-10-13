@@ -1,6 +1,6 @@
 <?php 
-    $salario = 800;
-    $meses   = 3;
+    $_salario = 800;
+    $_meses   = 3;
 ?>
 
 <!doctype html>
@@ -13,19 +13,23 @@
     <body>
         <?php 
             // Multiplicacao e Divisao
-
+            echo "Multiplicação e Divisão :" ." "; 
+            echo $_salario * $_meses . "</br>"."</br>"; 
+            echo $_salario / 2 . "</br>" . "</br>"; 
             // Exponencial
-            echo "Raiz quadrada: " . pow(6,3) . "</br>";
+            echo "Exponencial :" . " ". pow($_salario,2) . "</br>". "</br>";
 
             // Raiz Quadrada
+            echo "Raiz quadrada : " . " " . sqrt($_salario). "</br>". "</br>";
 
             // Randômico Generica
-            echo "Randomico: " . rand(1,5) . "</br>";
+            echo "Número genérico : " . " " . rand() . "</br>". "</br>";
 
             // Randômico entre um intervalo
-            echo "Randomico no intervalo " . rand() . "</br>";
+            echo "Número randômico intervalo :" . " " . rand(-5,2). "</br>". "</br>";
             
             // Valor absoluto
+            echo "Valor absoluto :" . " " . abs(5.3555)  . "</br>". "</br>";
             
         ?>
     </body>

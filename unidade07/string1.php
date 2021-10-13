@@ -1,3 +1,9 @@
+<?php 
+ $_marca = "Renault";
+ $_nome = "Sedan";
+?>
+
+
 <!doctype html>
 <html>
     <head>
@@ -6,6 +12,8 @@
     </head>
 
     <body>        
-        
+        <?php 
+            echo $_marca. " ".$_nome; 
+        ?>
     </body>
 </html>
