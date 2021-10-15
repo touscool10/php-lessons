@@ -8,7 +8,7 @@
      //$_dia = "domingo";
      $_sexo = "feminino";
      //$_sexo = "masculino";
-     $_idade = 108;
+     $_idade = 38;
 
 ?>
 
