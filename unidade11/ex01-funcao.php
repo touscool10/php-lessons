@@ -6,7 +6,13 @@
 </head>
 <body>
     <?php 
+        function retornarDiaria() {
+            return number_format( 1900/30, 2);
+        } //função sem parâmetros
 
+        echo retornarDiaria()."</br>"."</br>";
+        echo retornarDiaria()."</br>"."</br>";
+        
     ?>
 </body>
 </html>
