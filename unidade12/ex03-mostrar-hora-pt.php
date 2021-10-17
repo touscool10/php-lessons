@@ -6,21 +6,31 @@
     </head>
 
     <body>
-        <?php
-            date_default_timezone_set('US/Eastern');
-            $_agora = getdate();
+            <?php
+                setlocale(LC_TIME, "portuguese");
+                date_default_timezone_set('Brazil/East');
+                $agora = getdate();
+                $hora = $agora["hours"];
+                $minutos = $agora["minutes"];
+                $segundos = $agora["seconds"];
+                //$diaDaSemana = $agora["weekday"];
+                $diaDaSemana = strftime('%A');
+                $diaDoMes = $agora["mday"];
+                //$mes = $agora["month"];
+                $mes = strftime('%B');
+                $ano = $agora["year"];
+            ?>      
+   
+        <pre>
+            <?php
+                print_r($agora); echo "</br>"."</br>";
+                print_r ("Hoje é " . $diaDaSemana .", " . $diaDoMes .
+                        " de " . $mes . " de " . $ano .
+                        ".</br></br>Agora são ". $hora . ":" . 
+                        $minutos. ":" . $segundos .
+                        ", horário de Brasília.");
             
-            // criar elementos
-            $_segundo       = $_agora["seconds"];
-            $_minuto        = $_agora["minutes"];
-            $_hora          = $_agora["hours"];
-
-            $_dia           = $_agora["mday"];
-            $_mes           = $_agora["mon"];
-            $_ano           = $_agora["year"];
-
-            // mostrar na tela
-            echo $_hora . ":" . $_minuto . ":" . $_segundo . " - " . $_dia . "/" . $_mes . "/" . $_ano;
-        ?>
+            ?>
+        </pre>
     </body>
 </html>
