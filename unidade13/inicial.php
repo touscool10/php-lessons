@@ -6,12 +6,10 @@
     </head>
 
     <body>
-        
         <ul>
-            <li>Laranja</li>
-            <li>Maçã</li>
-            <li>Abacate</li>
-        </ul> 
-        
+            <li><a href="destino.php?parameter=0" >Laranja</a></li>
+            <li><a href="destino.php?parameter=1" >Maçã</a></li>
+            <li><a href="destino.php?parameter=2" >Abacate</a></li>
+        </ul>       
     </body>
 </html>
